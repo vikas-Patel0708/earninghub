@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps Links</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: #f4f4f4;
+            padding: 30px;
+            margin: 0;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 14px 0;
+        }
+
+        .app-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Har button ka alag light/pastel color */
+        .diwapay {
+            background: linear-gradient(135deg, #ffe0e0, #ffc9c9);
+            color: #c51e16;
+        }
+
+        .shaktipay {
+            background: linear-gradient(135deg, #d9fbe4, #b7f0cb);
+            color: #157347;
+        }
+
+        .wywallet {
+            background: linear-gradient(135deg, #dbe9ff, #c2d9ff);
+            color: #2952a3;
+        }
+
+        /* Hover pe halka sa uthega aur glow karega */
+        .app-btn:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+            filter: brightness(1.03);
+        }
+
+        /* Click hote hi thoda dab jaye */
+        .app-btn:active {
+            transform: scale(0.97);
+        }
+
+        .app-btn::after {
+            content: "➜";
+            margin-left: 10px;
+            transition: margin-left 0.3s;
+        }
+
+        .app-btn:hover::after {
+            margin-left: 18px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        h4 a {
+            text-decoration: none;
+            color: #0088cc;
+        }
+
+        h4 a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <h2> Apps Link Available in Telegram Group.So, Please Visit Telegram Group and check the pinned Message.</h2>
-    <a href ="https://t.me/Hubofearn"> Click here to Open Telegram </a>
+
+    <div>
+        <h1>&#128187; Apps Links</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://install.diwapwork.net/#/?invite=qVgmHU" class="app-btn diwapay">
+                        <b>DiwaPay</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://shaktipay.app/#/?invite=SWfrAz" class="app-btn shaktipay">
+                        <b>Shakti Pay</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wy3721.com/#/?invite=Zc4EAE" class="app-btn wywallet">
+                        <b>WYwallet</b>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <h2>Ye tino Platform ke Alawa aur bhi Bahut sare Platform ka Link Available in Telegram Group, So, Please Visit
+        Telegram Group and check the pinned Message.</h2>
+    <h4><a href="https://t.me/Hubofearn">&#9743;Click here to Open Telegram</a></h4>
+
 </body>
-</html>&#9743;
+
+</html>
