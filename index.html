@@ -14,81 +14,49 @@
       font-family: 'Georgia', serif;
       margin: 0;
       background: #fafafa;
-    }
-
-    /* ===== Buttons Common Style ===== */
-    .app-btn {
-      display: inline-block;
-      text-decoration: none;
-      color: white;
-      font-size: 17px;
-      font-weight: bold;
-      padding: 13px 34px;
-      margin: 6px 4px;
-      border-radius: 30px;
-      text-align: center;
-      min-width: 180px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-      transition: all 0.3s ease;
-      background: linear-gradient(135deg, #36d1dc, #5b86e5);
-    }
-
-    /* Hover pe bada + glow effect */
-    .app-btn:hover {
-      transform: translateY(-4px) scale(1.08);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
-      filter: brightness(1.08);
-    }
-
-    .app-btn:active {
-      transform: scale(0.96);
-    }
-
-    .app-btn::after {
-      content: "➜";
-      margin-left: 8px;
-      display: inline-block;
-      transition: margin-left 0.3s;
-    }
-
-    .app-btn:hover::after {
-      margin-left: 14px;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline-block;
+      padding-bottom: 65px;
+      /* taki bottom bar content ko na dhake */
     }
 
     h2 mark {
       background: none;
     }
 
-    /* ===== Mobile Responsive ===== */
-    @media (max-width: 600px) {
-      .app-btn {
-        display: block;
-        width: 90%;
-        margin: 10px auto;
-      }
+    /* ===== Amazon Jaisa Fixed Bottom Nav Bar ===== */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      border-top: 1px solid #ddd;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 6px 0;
+      z-index: 999;
+    }
 
-      nav ul li {
-        display: block;
-      }
+    .bottom-nav a {
+      flex: 1;
+      text-decoration: none;
+      color: #111;
+      text-align: center;
+      font-size: 12px;
+      padding: 6px 2px;
+      transition: background 0.2s ease;
+    }
 
-      h2 {
-        font-size: 20px;
-        text-align: center;
-      }
+    .bottom-nav a .icon {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
 
-      h1 {
-        font-size: 22px;
-      }
+    .bottom-nav a:active,
+    .bottom-nav a:hover {
+      background: #f0f0f0;
     }
   </style>
 </head>
@@ -102,15 +70,7 @@
   <hr>
   <!--Header Section-->
   <Header style="Background-color: #c7cb61f9;">
-     
-    <nav>
-      <ul>
-        <li><a href="reviews-section.html" class="app-btn"><b>&#10224;Home</b></a></li>
-        <li><a href="App Links.html" class="app-btn"><b>&#9993;Apps Link</b></a></li>
-        <li><a href="https://t.me/Hubofearn" target="_blank" class="app-btn"><b>Telegram Group</b></a></li>
-        <li><a href="https://t.me/+n1icujzaFVkwODc1" target="_blank" class="app-btn"><b>Telegram Support</b></a></li>
-      </ul>
-    </nav>
+    <h2><mark>🐾Welcome to Hub of Earning🐾</mark></h2>
   </Header>
   <hr>
   <p style="Background-color: #dc8239;">
@@ -148,6 +108,27 @@
   <footer>
     <h5>&#169;2026.All Right Reserved By Hub of Earning.</h5>
   </footer>
+
+  <!-- ===== Fixed Bottom Nav Bar (Amazon Style) ===== -->
+  <nav class="bottom-nav">
+    <a href="reviews-section.html">
+      <span class="icon">&#10224;</span>
+      Home
+    </a>
+    <a href="App Links.html">
+      <span class="icon">&#9993;</span>
+      Apps Link
+    </a>
+    <a href="https://t.me/Hubofearn" target="_blank">
+      <span class="icon">&#128172;</span>
+      Group
+    </a>
+    <a href="https://t.me/+n1icujzaFVkwODc1" target="_blank">
+      <span class="icon">&#128276;</span>
+      Support
+    </a>
+  </nav>
+
 </body>
 
 </html>
