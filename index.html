@@ -10,9 +10,15 @@
       box-sizing: border-box;
     }
 
+    html {
+      overflow-x: hidden;
+    }
+
     body {
       font-family: 'Georgia', serif;
       margin: 0;
+      width: 100%;
+      overflow-x: hidden;
       background: #fafafa;
       padding-bottom: 65px;
       /* taki bottom bar content ko na dhake */
@@ -20,6 +26,325 @@
 
     h2 mark {
       background: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ===== Disclaimer bar ===== */
+    .disclaimer {
+      background-color: #dc8239;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 8px 4px;
+    }
+
+    /* ===== Reviews Section (from review-section.html) ===== */
+    .reviews-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: #f9f9f9;
+    }
+
+    .reviews-section h2 {
+      font-size: 28px;
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    .section-subtitle {
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    /* ===== Countdown Offer Banner ===== */
+    .offer-banner {
+      background: linear-gradient(135deg, #d90429, #ef233c);
+      color: #fff;
+      text-align: center;
+      padding: 12px 15px;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .offer-banner .timer {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    /* ===== Overall Rating Summary ===== */
+    .rating-summary {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      background: #101053;
+      border-radius: 14px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .rating-box {
+      color: #fff;
+      text-align: center;
+      min-width: 130px;
+    }
+
+    .rating-box .big-num {
+      font-size: 32px;
+      font-weight: bold;
+      color: #f5a623;
+      display: block;
+    }
+
+    .rating-box .label {
+      font-size: 13px;
+      color: #cfcfea;
+      margin-top: 4px;
+    }
+
+    /* ===== Trust Badges Strip ===== */
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+    }
+
+    .badge {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 30px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #222;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ===== How It Works ===== */
+    .how-it-works {
+      max-width: 1000px;
+      margin: 0 auto 50px auto;
+    }
+
+    .how-it-works h3 {
+      font-size: 22px;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .step-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .step-num {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      background: linear-gradient(135deg, #f5a623, #f76b1c);
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 50%;
+      margin: 0 auto 15px auto;
+    }
+
+    .step-card h4 {
+      margin: 0 0 8px 0;
+      color: #222;
+      font-size: 16px;
+    }
+
+    .step-card p {
+      font-size: 13px;
+      color: #666;
+      margin: 0;
+    }
+
+    .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      text-align: left;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .review-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .review-user-info h4 {
+      margin: 0;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .stars {
+      color: #f5a623;
+      font-size: 14px;
+    }
+
+    .review-text {
+      color: #444;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .review-date {
+      font-size: 12px;
+      color: #999;
+    }
+
+    /* ===== Stats Counter ===== */
+    .stats-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 900px;
+      margin: 50px auto 20px auto;
+      padding: 30px 20px;
+      background: linear-gradient(135deg, #101053, #1c1c7a);
+      border-radius: 14px;
+    }
+
+    .stat-item {
+      text-align: center;
+      color: #fff;
+    }
+
+    .stat-item .num {
+      font-size: 30px;
+      font-weight: bold;
+      color: #f5a623;
+      display: block;
+    }
+
+    .stat-item .txt {
+      font-size: 13px;
+      color: #cfcfea;
+      margin-top: 4px;
+    }
+
+    /* ===== CTA Button ===== */
+    .cta-wrap {
+      text-align: center;
+      margin: 40px 0 10px 0;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(135deg, #f5a623, #f76b1c);
+      color: #fff;
+      font-weight: bold;
+      font-size: 17px;
+      padding: 14px 45px;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    .cta-sub {
+      font-size: 13px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    /* ===== WhatsApp Floating Button ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 80px;
+      /* bottom-nav ke upar rahe isliye 80px */
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      animation: pulse-wa 2s infinite;
+    }
+
+    @keyframes pulse-wa {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
     }
 
     /* ===== Amazon Jaisa Fixed Bottom Nav Bar ===== */
@@ -63,7 +388,7 @@
 
 <body>
   <hr>
-  <center><img src="earning-hub-logo-white-bg.png" style="width:100%; max-width:1150px; height:auto;"
+  <center><img src="earninghub-logo-updated.png" style="width:100%; max-width:1150px; height:auto;"
       alt="Error Image loading.."></center>
   <hr>
 
@@ -73,12 +398,203 @@
     <h2><mark>🐾Welcome to Hub of Earning🐾</mark></h2>
   </Header>
   <hr>
-  <p style="Background-color: #dc8239;">
-    <span style="color: hsl(240, 24%, 4%);">Disclaimber</span>:-<span style="color: #19196a;"><b>
+
+  <p class="disclaimer">
+    <span style="color: hsl(240, 24%, 4%);">Disclaimer</span>:-<span style="color: #19196a;"><b>
         <marquee>this is only for educational purpose,and "We do not guarantee any fixed or guaranteed income. The
           figures/examples provided here are for educational purposes only, and actual results may Different."</marquee>
       </b></span>
   </p>
+
+  <!-- ===== Countdown Offer Banner (from review-section.html) ===== -->
+  <div class="offer-banner">
+    🔥 Limited Time Offer Khatam Hone Wala Hai:
+    <span class="timer" id="countdown">00:00:00</span>
+  </div>
+
+  <!-- ===== Reviews / Testimonials Section (from review-section.html) ===== -->
+  <section class="reviews-section">
+    <center>
+      <h2><u>Hamare Users Kya Kehte Hain Unke Review</u></h2>
+    </center>
+    <center>
+      <p class="section-subtitle">
+        <h4><u>Real logon ke real experience</u></h4>
+      </p>
+    </center>
+
+    <!-- Overall Rating Summary -->
+    <div class="rating-summary">
+      <div class="rating-box">
+        <span class="big-num">4.7★</span>
+        <span class="label">Average Rating</span>
+      </div>
+      <div class="rating-box">
+        <span class="big-num">6+</span>
+        <span class="label">Verified Reviews</span>
+      </div>
+      <div class="rating-box">
+        <span class="big-num">95%</span>
+        <span class="label">Satisfaction Rate</span>
+      </div>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="trust-badges">
+      <span class="badge">✅ Verified Reviews</span>
+      <span class="badge">🔒 100% Secure Platform</span>
+      <span class="badge">⚡ Fast Withdrawal</span>
+      <span class="badge">💬 24/7 Support</span>
+    </div>
+
+    <!-- How It Works -->
+    <div class="how-it-works">
+      <h3>⚙️ Kaise Kaam Karta Hai</h3>
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h4>Sign Up Karein</h4>
+          <p>Platform pe free register karein, sirf 2 minute lagenge.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h4>Task Complete Karein</h4>
+          <p>Simple tasks/kaam complete karein jo app mein diye gaye hain.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h4>Earn & Withdraw</h4>
+          <p>Apni earning ko fast aur secure tarike se withdraw karein.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-container">
+
+      <!-- Review 1 -->
+      <div class="review-card" style="background-color:#101053;">
+        <div class="review-header">
+          <img src="https://via.placeholder.com/60" alt="User" class="review-avatar">
+          <div class="review-user-info">
+            <h4><mark>Rahul Sharma</mark></h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p class="review-text">
+          <span style="color:#eeeb0c;">Maine sirf 2 hafte pehle join kiya tha aur aaj daily earning kr rha. Process
+            bahut easy hai aur support team bhi helpful hai."
+            Thank,s to Hub of Earning Group. </span>
+        </p>
+        <span class="review-date">15 March 2026</span>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card" style="background-color:#101053;">
+        <div class="review-header">
+          <img src="https://via.placeholder.com/60" alt="User" class="review-avatar">
+          <div class="review-user-info">
+            <h4><mark>Priya Verma</mark></h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p class="review-text">
+          <span style="color:#eeeb0c;">"Ghar baithe extra income ka ye sabse accha tareeka laga mujhe. Withdrawal
+            time pe milta hai, koi delay nahi."</span>
+        </p>
+        <span class="review-date">10 March 2026</span>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card" style="background-color:#101053;">
+        <div class="review-header">
+          <img src="https://via.placeholder.com/60" alt="User" class="review-avatar">
+          <div class="review-user-info">
+            <h4><mark>Amit Kumar</mark></h4>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+        <p class="review-text">
+          <span style="color:#eeeb0c;">"Shuru me thoda confuse hua tha but ek baar samajh aane ke baad kaafi smooth
+            experience raha. Recommend karta hoon."</span>
+        </p>
+        <span class="review-date">5 July 2026</span>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card" style="background-color:#101053;">
+        <div class="review-header">
+          <img src="https://via.placeholder.com/60" alt="User" class="review-avatar">
+          <div class="review-user-info">
+            <h4><mark>Sneha Singh</mark></h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p class="review-text">
+          <span style="color:#eeeb0c;">"Student hoon, isliye part time earning ke liye perfect platform mila. Simple
+            tasks, achha payout."</span>
+        </p>
+        <span class="review-date">1 July 2026</span>
+      </div>
+
+      <!-- Review 5-->
+      <div class="review-card" style="background-color:#101053;">
+        <div class="review-header">
+          <img src="https://via.placeholder.com/60" alt="User" class="review-avatar">
+          <div class="review-user-info">
+            <h4><mark>Suman Singh</mark></h4>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+        <p class="review-text">
+          <span style="color:#eeeb0c;">"Best Earning Platform hai bhai log. Jarur Try kro."</span>
+        </p>
+        <span class="review-date">15 July 2026</span>
+      </div>
+
+      <!-- Review 6-->
+      <div class="review-card" style="background-color:#101053;">
+        <div class="review-header">
+          <img src="https://via.placeholder.com/60" alt="User" class="review-avatar">
+          <div class="review-user-info">
+            <h4><mark>Gulshan kumar</mark></h4>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+        <p class="review-text">
+          <span style="color:#eeeb0c;">"Hub of Earning Group me mujhe best Earning opportunity."</span>
+        </p>
+        <span class="review-date">18 July 2026</span>
+      </div>
+
+    </div>
+
+    <!-- Stats Counter -->
+    <div class="stats-strip">
+      <div class="stat-item">
+        <span class="num">1000+</span>
+        <span class="txt">Active Users</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">₹2L+</span>
+        <span class="txt">Total Payout</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">24/7</span>
+        <span class="txt">Support Available</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">100%</span>
+        <span class="txt">Verified Platform</span>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="cta-wrap">
+      <a href="App Links.html" class="cta-btn">🚀 Abhi Join Kare</a>
+      <p class="cta-sub">Sirf 2 minute me shuru karein apni earning journey</p>
+    </div>
+
+  </section>
 
   <hr>
   <h1>&#9733;<u> Specialities Section</u></h1>
@@ -109,9 +625,14 @@
     <h5>&#169;2026.All Right Reserved By Hub of Earning.</h5>
   </footer>
 
+  <!-- WhatsApp Floating Button -->
+  <a href="https://t.me/+n1icujzaFVkwODc1" target="_blank" class="whatsapp-float">
+    &#128172;
+  </a>
+
   <!-- ===== Fixed Bottom Nav Bar (Amazon Style) ===== -->
   <nav class="bottom-nav">
-    <a href="reviews-section.html">
+    <a href="index.html">
       <span class="icon">&#10224;</span>
       Home
     </a>
@@ -128,6 +649,37 @@
       Support
     </a>
   </nav>
+
+  <script>
+    // Countdown Timer - 24 hours se restart hota rahega
+    function startCountdown() {
+      let duration = 24 * 60 * 60; // 24 hours in seconds
+      let endTime = localStorage.getItem('offerEndTime');
+
+      if (!endTime || Date.now() > parseInt(endTime)) {
+        endTime = Date.now() + duration * 1000;
+        localStorage.setItem('offerEndTime', endTime);
+      } else {
+        endTime = parseInt(endTime);
+      }
+
+      const timerEl = document.getElementById('countdown');
+
+      setInterval(function () {
+        let remaining = Math.floor((endTime - Date.now()) / 1000);
+        if (remaining <= 0) {
+          endTime = Date.now() + duration * 1000;
+          localStorage.setItem('offerEndTime', endTime);
+          remaining = duration;
+        }
+        let h = String(Math.floor(remaining / 3600)).padStart(2, '0');
+        let m = String(Math.floor((remaining % 3600) / 60)).padStart(2, '0');
+        let s = String(remaining % 60).padStart(2, '0');
+        timerEl.textContent = h + ":" + m + ":" + s;
+      }, 1000);
+    }
+    startCountdown();
+  </script>
 
 </body>
 
